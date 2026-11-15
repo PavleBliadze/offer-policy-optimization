@@ -10,7 +10,7 @@ Everything is in one notebook: [`offer_policy.ipynb`](offer_policy.ipynb).
 - Four possible actions: `auto_save_offer`, `cashback`, `reminder`, `none`.
 - A simulator (`CustomerEnvironment`) that returns the reward and tells whether the customer churned after each action.
 
-The customer data and the simulator were provided with the task and are not included in this repository.
+The customer data and the simulator are confidential and are not included in this repository.
 
 ## What the notebook does
 
@@ -41,11 +41,6 @@ The Q-learning policy was evaluated on a train / test split of customers (400 / 
 
 That is a higher reward per customer than any of the cluster policies (264k to 287k), with churn well below the reward optimized ones. The comparison is not perfectly like for like, because the cluster policies were scored on all 500 customers, and a fresh test set would be needed to rank them properly.
 
-## Running it
+## Reproducibility
 
-```bash
-pip install -r requirements.txt
-jupyter lab
-```
-
-The notebook unpacks `data_scientist_assignment.zip`, which holds `ds_assignment_customer_data.csv` and the compiled simulator `simulator.cpython-39.pyc`, in the project folder, so it needs Python 3.9 to run end to end. The saved outputs can be read without either file.
+The customer data and the simulator are confidential and are not part of this repository, so the notebook cannot be re-run from here. All outputs are saved in the notebook, so the full analysis, tables and charts can be read directly on GitHub. `requirements.txt` lists the libraries that were used. The customer simulator is a compiled Python 3.9 module, so the original run used Python 3.9.
